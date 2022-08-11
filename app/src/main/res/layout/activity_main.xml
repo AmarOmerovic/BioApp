@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="bio"
+            type="com.amaromerovic.bioapp.data.Bio" />
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/image_description"
+            app:srcCompat="@drawable/amaromerovic" />
+
+        <TextView
+            android:id="@+id/nameTextView"
+            style="@style/textViewStyle"
+            android:fontFamily="@font/roboto_slab"
+            android:text="@{bio.name}" />
+
+        <ScrollView
+            style="@style/nameStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/bio_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    style="@style/bioStyle"
+                    android:layout_gravity="top"
+                    android:fontFamily="@font/roboto_slab"
+                    android:text="@string/bio"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/popUpText2"
+                    style="@style/bioStyle"
+                    android:fontFamily="@font/roboto_slab"
+                    android:text="@string/hobbies_text"
+                    android:textStyle="normal"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/popUpText"
+                    style="@style/bioStyle"
+                    android:fontFamily="@font/roboto_slab"
+                    android:text="@{bio.hobbies}"
+                    android:textStyle="normal"
+                    android:visibility="gone" />
+
+                <Space
+                    android:id="@+id/spaceWidget"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    tools:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/enterHobbies"
+                    style="@style/bioStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/bio_margin"
+                    android:autofillHints="Football"
+                    android:ems="10"
+                    android:fontFamily="@font/roboto_slab"
+                    android:hint="@string/hobby_hint_text"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:padding="@dimen/bio_padding"
+                    android:textAlignment="center"
+                    android:textColorHint="#78909C"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/doneButton"
+                    style="@style/nameStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#FF5722"
+                    android:drawableTint="#000000"
+                    android:fontFamily="@font/roboto_slab"
+                    android:foregroundTint="#000000"
+                    android:text="@string/done_button_text"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</layout>
+
+
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/akaya_telivigala</item>
+        <item>@font/aref_ruqaa_bold</item>
+        <item>@font/quantico</item>
+        <item>@font/roboto_condensed_bold</item>
+        <item>@font/roboto_mono</item>
+        <item>@font/roboto_slab</item>
+    </array>
+</resources>

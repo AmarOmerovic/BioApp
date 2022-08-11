@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BioApp</string>
+    <string name="bio"><b>\tInfo:</b>\n\n* 🌍 I\'m based in Tuzla\n\n* ✉️ Contact me at: amaromerovic70@gmail.com\n\n* 🧠 I\'m learning Android in Java at the moment\n\n * 🤝 I\'m open for Internship positions\n\n\n\t<b>Bio:</b>\n\nHello, my name is Amar, I am 19 years old, and I am from Banovići, Bosnia and Herzegovina where I completed elementary and high school. In Tuzla, I am enrolled at \"Internacionalna poslovno-informaciona akademija\", where I am majoring in Computer Science and Information Technology. I\'m in my third semester, and I can say that I\'m doing pretty well. At the moment I\'m learning to become a Software Developer, to be precise a Mobile Software Developer. My plan is to start with Android and let the journey take me to the next step. I am a team player that adapts effectively to different situations. I appreciate new challenges and will do everything in my power to overcome them.\n\n\n\t<b>Skills:</b>\n\n* C\n\n* Java\n\n* HTML5\n\n* CSS3\n\n* SQLite\n\n* Android\n\n* Bash\n\n* Data structures and algorithms\n\n</string>
+    <string name="hobby_hint_text">Enter your hobbies</string>
+    <string name="done_button_text">Done</string>
+    <string name="image_description">Amar Omerovic Portrait</string>
+    <string name="hobbies_text"><b>\tHobbies:</b></string>
+    <string name="welcome_to_mybioapp">Welcome to\n myBIoApp</string>
+    <string name="continueButton">Continue</string>
+    <string name="exit">Exit</string>
+</resources>
